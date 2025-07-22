@@ -1,177 +1,921 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zack's Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zack's Portfolio</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-<!-- AOS Animation Library -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="bi bi-heart-pulse"></i>
+        <div class="logo-text">
+          <strong>EZEKIEL</strong> <span>WANGILA</span>
+          <small class="tagline">Medical Representative</small>
+        </div>
+      </a>
 
-</head>
-<body>
+      
+        <div class="hamburger" id="hamburger">
+          <i class="bi bi-list"></i>
+        </div>
+      
+        <nav class="navbar" id="navbar">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About Me</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link cta">Hire Me</a>
+        </nav>
+      
+        <div class="header-social">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </header>
+      
 
-  <!-- Header -->
-  <header class="header">
-    <a href="#" class="logo">
-      <i class="bi bi-heart-pulse"></i>
-      <div class="logo-text">
-        <strong>EZEKIEL</strong> <span>WANGILA</span>
-        <small class="tagline">Medical Representative</small>
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="home-text">
+          <h1>Hi, I'm <span class="highlight">Ezekiel Wangila</span></h1>
+          <h2>A <span id="typed-text" class="typed"></span></h2>
+          <p>
+            I champion high-quality pharmaceutical products that empower
+            healthcare professionals to deliver better patient outcomes. By
+            partnering with doctors and pharmacies across Nairobi, I help ensure
+            timely access to trusted treatments that make a difference.
+          </p>
+
+          <a href="#contact" class="btn-home">Get In Touch</a>
+        </div>
+        <div class="home-img">
+          <img src="./images/Zack png.jpeg" alt="profile pic" />
+          <!-- Optional image or graphic -->
+        </div>
       </div>
-    </a>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <!-- Section Title -->
+        <h2 class="section-title">About Me</h2>
+
+        <!-- Mission/Motto -->
+        <p class="mission">
+          Bridging healthcare needs with reliable pharmaceutical solutions.
+        </p>
+
+        <!-- Main About Paragraph -->
+        <p class="about-paragraph">
+          I am a dedicated medical sales representative with a passion for
+          advancing healthcare access through innovative pharmaceutical
+          solutions. With extensive experience in promoting evidence-based
+          therapies, I specialize in connecting doctors and pharmacies with
+          trusted medications that improve patient outcomes. My role goes beyond
+          sales—I work closely with healthcare professionals to understand
+          clinical challenges and provide tailored support that aligns with
+          treatment goals. Operating primarily in Nairobi, I bridge the gap
+          between pharmaceutical manufacturers and the frontline of care,
+          ensuring that every prescription is backed by quality, safety, and
+          timely delivery. Whether it's launching a new therapy or reinforcing
+          an established brand, I bring strategic insight, product knowledge,
+          and a commitment to excellence in every interaction.
+        </p>
+
+        <!-- Download CV -->
+        <a href="./cv/ezekiel-cv.pdf" class="btn-download" download
+          >Download CV</a
+        >
+
+        <!-- Contact CTA -->
+        <p class="contact-cta">
+          Have a product or healthcare solution you'd like to promote?
+          <a href="#contact">Let’s connect.</a>
+        </p>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2 class="section-title">What I Offer</h2>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <i
+              class="bi bi-capsule service-icon"
+              title="Sampling, promotions & advocacy"
+            ></i>
+            <h3>Product Representation</h3>
+            <p>
+              Promoting pharmaceutical products with accuracy and integrity to
+              healthcare providers across Nairobi.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <i
+              class="bi bi-person-bounding-box service-icon"
+              title="Relationship-building with clinics & pharmacies"
+            ></i>
+            <h3>Doctor & Pharmacy Engagement</h3>
+            <p>
+              Building lasting relationships with medical professionals to
+              support treatment decisions and trust in drug efficacy.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <i
+              class="bi bi-bar-chart service-icon"
+              title="Field reporting & competitor feedback"
+            ></i>
+            <h3>Market Insights</h3>
+            <p>
+              Providing pharmaceutical companies with real-time field insights,
+              prescribing trends, and competitor activity.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <i
+              class="bi bi-people service-icon"
+              title="Presence at conferences and launches"
+            ></i>
+            <h3>Medical Event Support</h3>
+            <p>
+              Representing brands during CME events, product launches, and
+              conferences to ensure impactful medical presence.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="stats-row">
+          <div class="stat-item">
+            <h3>250+</h3>
+            <p>Doctors Reached</p>
+          </div>
+          <div class="stat-item">
+            <h3>3,000+</h3>
+            <p>Pharmacy Consultations</p>
+          </div>
+          <div class="stat-item">
+            <h3>15+</h3>
+            <p>Products Promoted</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section -->
+    <!-- Experience Section -->
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Experience</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">
+          Over 6 years of impactful work across leading pharmaceutical companies
+          in Nairobi.
+        </p>
+
+        <div class="timeline">
+          <!-- Europa Healthcare -->
+          <div
+            class="experience-card"
+            style="
+              --company-color-1: #007bff;
+              --company-logo: url('./images/europa-logo.png');
+            "
+            onclick="window.open(https//)"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="timeline-dot"><span class="year">2022</span></div>
+            <div class="company-logo">
+              <img src="./images/Europa.png" alt="Europa Logo" />
+            </div>
+            <div class="card-content">
+              <h3>Medical Representative – Europa Healthcare</h3>
+              <p class="duration">Jan 2022 – Present</p>
+              <ul class="achievements">
+                <li>
+                  <i class="bi bi-trophy-fill"></i> Promoted 5+ cardiovascular
+                  drugs across Nairobi
+                </li>
+                <li>
+                  <i class="bi bi-people-fill"></i> Built trust with over 300
+                  doctors and specialists
+                </li>
+                <li>
+                  <i class="bi bi-graph-up-arrow"></i> Achieved Top Regional
+                  Sales in Q2 2023
+                </li>
+              </ul>
+              <div class="stat-badges">
+                <div class="stat-badge">Cardiology</div>
+                <div class="stat-badge">300+ Clients</div>
+                <div class="stat-badge">Top Sales Q2 2023</div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">B2B Sales</span>
+                <span class="skill-tag">Physician Engagement</span>
+                <span class="skill-tag">Drug Positioning</span>
+              </div>
+              <blockquote class="testimonial">
+                “Ezekiel’s product knowledge and confidence consistently
+                impressed Nairobi’s top specialists.”
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Skyline Healthcare -->
+          <div
+            class="experience-card"
+            style="
+              --company-color-1: #8e2de2;
+              --company-logo: url('./images/skyline-logo.png');
+            "
+            onclick="window.open('https://www.qpharma.com', '_blank', 'noopener,noreferrer')"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="timeline-dot"><span class="year">2020</span></div>
+            <div class="company-logo">
+              <img src="./images/Skiline.png" alt="Skyline Logo" />
+            </div>
+            <div class="card-content">
+              <h3>Sales Rep – Skyline Healthcare (QPharma)</h3>
+              <p class="duration">May 2020 – Dec 2021</p>
+              <ul class="achievements">
+                <li>
+                  <i class="bi bi-capsule"></i> Introduced and positioned 3 new
+                  generics in the market
+                </li>
+                <li>
+                  <i class="bi bi-award-fill"></i> Recognized for Best Product
+                  Launch Strategy
+                </li>
+                <li>
+                  <i class="bi bi-clipboard-data"></i> Captured over 2,000
+                  prescription patterns
+                </li>
+              </ul>
+              <div class="stat-badges">
+                <div class="stat-badge">3 Products Launched</div>
+                <div class="stat-badge">Best Launch Award</div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Product Launch</span>
+                <span class="skill-tag">Market Education</span>
+                <span class="skill-tag">Prescription Analysis</span>
+              </div>
+              <blockquote class="testimonial">
+                “He delivered one of the most successful generic launches we've
+                had.”
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Krishna Pharmacy -->
+          <div
+            class="experience-card"
+            style="
+              --company-color-1: #00c853;
+              --company-logo: url('./images/krishna-logo.png');
+            "
+            onclick="window.open('https://goo.gl/maps/YOUR_KRISHNA_PHARMACY_LOCATION', '_blank', 'noopener,noreferrer')"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="timeline-dot"><span class="year">2018</span></div>
+            <div class="company-logo">
+              <img src="./images/Krishna.png" alt="Krishna Logo" />
+            </div>
+            <div class="card-content">
+              <h3>Pharmaceutical Rep – Krishna Pharmacy Ltd</h3>
+              <p class="duration">Jan 2018 – Apr 2020</p>
+              <ul class="achievements">
+                <li>
+                  <i class="bi bi-building-check"></i> Onboarded 100+ retail
+                  pharmacies
+                </li>
+                <li>
+                  <i class="bi bi-boxes"></i> Managed supply chain feedback and
+                  product availability
+                </li>
+                <li>
+                  <i class="bi bi-hand-thumbs-up"></i> Exceeded monthly sales
+                  targets by 20% avg.
+                </li>
+              </ul>
+              <div class="stat-badges">
+                <div class="stat-badge">100+ Outlets</div>
+                <div class="stat-badge">+20% Sales Growth</div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Retail Sales</span>
+                <span class="skill-tag">Supply Chain Liaison</span>
+                <span class="skill-tag">Target Execution</span>
+              </div>
+              <blockquote class="testimonial">
+                “He turned our pharmacy partnerships into a competitive
+                advantage.”
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="experience-cta" data-aos="fade-up" data-aos-delay="400">
+            <h4>Want to collaborate or learn more?</h4>
+            <a href="#contact" class="cta-button">Let’s Connect</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Skills Section ================= -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <!-- Section Title -->
+        <h2 class="section-title" data-aos="fade-up">Skills & Strengths</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          A blend of pharmaceutical expertise and interpersonal excellence.
+        </p>
+
+        <!-- Core Competencies -->
+        <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-card">
+            <h4>💊 Drug Positioning & Medical Detailing</h4>
+            <ul>
+              <li>Tailored detailing for specialists</li>
+              <li>Therapy-based drug comparisons</li>
+              <li>Updated on latest formulations</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h4>📈 Sales Strategy & Territory Planning</h4>
+            <ul>
+              <li>Territory segmentation</li>
+              <li>Targeted campaigns</li>
+              <li>Strategic doctor mapping</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h4>📊 Data-Driven Selling</h4>
+            <ul>
+              <li>CRM & prescription trends</li>
+              <li>KPI monitoring & reports</li>
+              <li>Decision-making based on metrics</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h4>🧪 Product Launch Execution</h4>
+            <ul>
+              <li>Pre-launch market research</li>
+              <li>Doctor onboarding strategies</li>
+              <li>Cross-functional coordination</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="soft-skills" data-aos="fade-up" data-aos-delay="300">
+          <span class="soft-skill">🗣️ Persuasive Communication</span>
+          <span class="soft-skill">🤝 Relationship Building</span>
+          <span class="soft-skill">😃 Charisma & Confidence</span>
+          <span class="soft-skill">🧠 Active Listening</span>
+        </div>
+
+        <!-- Scenario Cards -->
+        <div class="scenario-cards" data-aos="fade-up" data-aos-delay="400">
+          <div class="scenario-card">
+            <h5>🩺 Medical Engagement</h5>
+            <p>
+              Built strong rapport with top specialists, often invited to
+              present new therapies during ward rounds.
+            </p>
+          </div>
+          <div class="scenario-card">
+            <h5>📈 Sales Strategy in Action</h5>
+            <p>
+              Used prescription pattern data to boost sales by 25% in under 3
+              months.
+            </p>
+          </div>
+          <div class="scenario-card">
+            <h5>🗣️ Charismatic Selling</h5>
+            <p>
+              Known by doctors as the go-to for simplified drug comparisons and
+              patient compatibility insights.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill Cloud -->
+        <div class="skill-cloud" data-aos="fade-up" data-aos-delay="500">
+          <span class="cloud-tag">CRM Tools</span>
+          <span class="cloud-tag">Territory Mapping</span>
+          <span class="cloud-tag">Prescription Trends</span>
+          <span class="cloud-tag">B2B Sales</span>
+          <span class="cloud-tag">Pharma Marketing</span>
+          <span class="cloud-tag">KPI Reporting</span>
+          <span class="cloud-tag">Excel</span>
+          <span class="cloud-tag">PowerPoint</span>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Products in Stock Section ====== -->
+    <!-- ====== PRODUCTS IN STOCK SECTION ====== -->
+    <section id="products" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Current Products in Stock</h2>
+        <div class="row g-4">
+          <!-- ===== Product Card Template (Repeat for Each) ===== -->
+
+          <!-- Product 1: AMDIP -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card product-card h-100 shadow position-relative border-0"
+            >
+              <span
+                class="gradient-bar"
+                style="background: linear-gradient(to bottom, #00bcd4, #0097a7)"
+              ></span>
+              <img
+                src="./images/amdip.jpg"
+                class="card-img-top product-img"
+                alt="AMDIP 5mg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">AMDIP 5mg</h5>
+                <p class="card-text small text-muted">
+                  Antihypertensive · Europa
+                </p>
+                <span class="badge bg-success position-absolute top-0 end-0 m-2"
+                  >In Stock</span
+                >
+                <button
+                  class="btn btn-outline-primary btn-sm mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalAmdip"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal AMDIP -->
+          <div
+            class="modal fade"
+            id="modalAmdip"
+            tabindex="-1"
+            aria-labelledby="modalAmdipLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">AMDIP 5mg – Amlodipine</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <strong>Use:</strong> Management of high blood pressure and
+                    angina.
+                  </p>
+                  <p>
+                    <strong>Highlights:</strong> Once-daily dose, well
+                    tolerated, ideal for monotherapy or combo.
+                  </p>
+                  <p><strong>Packaging:</strong> 5mg tablets (10x10)</p>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="./pdfs/amdip.pdf"
+                    class="btn btn-outline-secondary"
+                    download
+                    >Download PDF</a
+                  >
+                  <a
+                    href="https://wa.me/254712345678?text=I'm+interested+in+AMDIP+5mg"
+                    class="btn btn-success"
+                    >WhatsApp Order</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: CLAVEX -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card product-card h-100 shadow position-relative border-0"
+            >
+              <span
+                class="gradient-bar"
+                style="background: linear-gradient(to bottom, #4caf50, #2e7d32)"
+              ></span>
+              <img
+                src="./images/clavex.jpg"
+                class="card-img-top product-img"
+                alt="CLAVEX 875/125"
+              />
+              <div class="card-body">
+                <h5 class="card-title">CLAVEX 875/125</h5>
+                <p class="card-text small text-muted">
+                  Broad-Spectrum Antibiotic · Europa
+                </p>
+                <span class="badge bg-success position-absolute top-0 end-0 m-2"
+                  >In Stock</span
+                >
+                <button
+                  class="btn btn-outline-primary btn-sm mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalClavex"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="modalClavex"
+            tabindex="-1"
+            aria-labelledby="modalClavexLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">
+                    CLAVEX 875/125 – Amoxicillin + Clavulanic Acid
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <strong>Use:</strong> Bacterial infections including ENT,
+                    respiratory, UTI.
+                  </p>
+                  <p>
+                    <strong>Highlights:</strong> Extended spectrum, β-lactamase
+                    inhibitor protection, BID dosing.
+                  </p>
+                  <p><strong>Packaging:</strong> 10 tablets per strip</p>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="./pdfs/clavex.pdf"
+                    class="btn btn-outline-secondary"
+                    download
+                    >Download PDF</a
+                  >
+                  <a
+                    href="https://wa.me/254712345678?text=I'm+interested+in+CLAVEX+875/125"
+                    class="btn btn-success"
+                    >WhatsApp Order</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: PANTOGERD DSR -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card product-card h-100 shadow position-relative border-0"
+            >
+              <span
+                class="gradient-bar"
+                style="background: linear-gradient(to bottom, #ef5350, #c62828)"
+              ></span>
+              <img
+                src="./images/pantogerd.jpg"
+                class="card-img-top product-img"
+                alt="PANTOGERD DSR"
+              />
+              <div class="card-body">
+                <h5 class="card-title">PANTOGERD DSR</h5>
+                <p class="card-text small text-muted">GERD Therapy · Europa</p>
+                <span
+                  class="badge bg-warning text-dark position-absolute top-0 end-0 m-2"
+                  >Limited Stock</span
+                >
+                <button
+                  class="btn btn-outline-primary btn-sm mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPantogerd"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="modalPantogerd"
+            tabindex="-1"
+            aria-labelledby="modalPantogerdLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">
+                    PANTOGERD DSR – Pantoprazole + Domperidone
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <strong>Use:</strong> Acid reflux, gastritis, functional
+                    dyspepsia.
+                  </p>
+                  <p>
+                    <strong>Highlights:</strong> Dual-action (acid suppression +
+                    prokinetic), effective symptom relief.
+                  </p>
+                  <p>
+                    <strong>Packaging:</strong> 10 modified-release capsules
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="./pdfs/pantogerd.pdf"
+                    class="btn btn-outline-secondary"
+                    download
+                    >Download PDF</a
+                  >
+                  <a
+                    href="https://wa.me/254712345678?text=I'm+interested+in+PANTOGERD+DSR"
+                    class="btn btn-success"
+                    >WhatsApp Order</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: CIFEX -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card product-card h-100 shadow position-relative border-0"
+            >
+              <span
+                class="gradient-bar"
+                style="background: linear-gradient(to bottom, #9c27b0, #6a0080)"
+              ></span>
+              <img
+                src="./images/cifex.jpg"
+                class="card-img-top product-img"
+                alt="CIFEX 200"
+              />
+              <div class="card-body">
+                <h5 class="card-title">CIFEX 200</h5>
+                <p class="card-text small text-muted">
+                  3rd-gen Antibiotic · Europa
+                </p>
+                <span class="badge bg-success position-absolute top-0 end-0 m-2"
+                  >In Stock</span
+                >
+                <button
+                  class="btn btn-outline-primary btn-sm mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCifex"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="modalCifex"
+            tabindex="-1"
+            aria-labelledby="modalCifexLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">CIFEX 200 – Cefixime</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <strong>Use:</strong> Uncomplicated respiratory and urinary
+                    infections, typhoid.
+                  </p>
+                  <p>
+                    <strong>Highlights:</strong> Once-daily dosing, broad
+                    spectrum, high patient adherence.
+                  </p>
+                  <p><strong>Packaging:</strong> 10 tablets (200mg)</p>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="./pdfs/cifex.pdf"
+                    class="btn btn-outline-secondary"
+                    download
+                    >Download PDF</a
+                  >
+                  <a
+                    href="https://wa.me/254712345678?text=I'm+interested+in+CIFEX+200"
+                    class="btn btn-success"
+                    >WhatsApp Order</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5: EUROZITH -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card product-card h-100 shadow position-relative border-0"
+            >
+              <span
+                class="gradient-bar"
+                style="background: linear-gradient(to bottom, #ff9800, #e65100)"
+              ></span>
+              <img
+                src="./images/eurozith.jpg"
+                class="card-img-top product-img"
+                alt="EUROZITH 500"
+              />
+              <div class="card-body">
+                <h5 class="card-title">EUROZITH 500</h5>
+                <p class="card-text small text-muted">
+                  Macrolide Antibiotic · Europa
+                </p>
+                <span class="badge bg-success position-absolute top-0 end-0 m-2"
+                  >In Stock</span
+                >
+                <button
+                  class="btn btn-outline-primary btn-sm mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalEurozith"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="modalEurozith"
+            tabindex="-1"
+            aria-labelledby="modalEurozithLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">EUROZITH 500 – Azithromycin</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <strong>Use:</strong> Upper/lower respiratory tract
+                    infections, STIs, skin infections.
+                  </p>
+                  <p>
+                    <strong>Highlights:</strong> 3-day course, high tissue
+                    penetration, convenient dosing.
+                  </p>
+                  <p><strong>Packaging:</strong> 3 tablets (500mg each)</p>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="./pdfs/eurozith.pdf"
+                    class="btn btn-outline-secondary"
+                    download
+                    >Download PDF</a
+                  >
+                  <a
+                    href="https://wa.me/254712345678?text=I'm+interested+in+EUROZITH+500"
+                    class="btn btn-success"
+                    >WhatsApp Order</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <!-- Particle Background -->
+      <div id="particles-js"></div>
+    
+      <!-- Contact Card -->
+      <div class="contact-card glassmorphism" data-aos="fade-up" role="form">
+        <h2 id="contact-heading" class="section-title">Let’s Connect</h2>
+        <p class="section-subtitle">Feel free to reach out to collaborate or say hello 👋</p>
+    
+        <div class="contact-content">
+          <!-- Contact Info -->
+          <address class="contact-info">
+            <p><i class="bi bi-envelope-fill" aria-hidden="true"></i> 
+              <a href="daviszack043@gmail.com" aria-label="Send email">daviszack043@gmail.com</a>
+            </p>
+            <p><i class="bi bi-phone-fill" aria-hidden="true"></i> 
+              <a href="tel:+254708333761" aria-label="Call phone">+254708333761</a>
+            </p>
+            <p><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Nairobi, Kenya</p>
+            <div class="contact-socials">
+              <a href="https://wa.me/+254708333761" target="_blank" aria-label="Chat on WhatsApp">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+              <a href="https://linkedin.com/in/yourname" target="_blank" aria-label="View LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </address>
+    
+          <!-- Contact Form -->
+          <form class="contact-form" aria-label="Contact form">
+            <input type="text" placeholder="Your Name" required aria-label="Your Name" />
+            <input type="email" placeholder="Your Email" required aria-label="Your Email" />
+            <textarea placeholder="Your Message" required aria-label="Your Message"></textarea>
+            <button type="submit"><i class="bi bi-send-fill"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
     
 
-    <nav class="navbar" id="navbar">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About Me</a>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#projects" class="nav-link">Experience</a>
-      <a href="#contact" class="nav-link cta">Hire Me</a>
-    </nav>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <div class="hamburger" id="hamburger">
-      <i class="bi bi-list"></i>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="header-social">
-      <a href="#"><i class="bi bi-facebook"></i></a>
-      <a href="#"><i class="bi bi-twitter"></i></a>
-      <a href="#"><i class="bi bi-instagram"></i></a>
-      <a href="#"><i class="bi bi-linkedin"></i></a>
-    </div>
-  </header>
-
-  <!-- Home Section -->
-  <section class="home" id="home">
-    <div class="container">
-      <div class="home-text">
-        <h1>Hi, I'm <span class="highlight">Ezekiel Wangila</span></h1>
-        <h2>A <span id="typed-text" class="typed"></span></h2>
-        <p>
-          I champion high-quality pharmaceutical products that empower healthcare professionals to deliver better patient outcomes. By partnering with doctors and pharmacies across Nairobi, I help ensure timely access to trusted treatments that make a difference.
-        </p>
-        
-        <a href="#contact" class="btn-home">Get In Touch</a>
-      </div>
-      <div class="home-img">
-        <img src="./images/Zack png.jpeg" alt="profile pic">
-        <!-- Optional image or graphic -->
-      </div>
-    </div>
-  </section>
-  <!-- About Section -->
-<section id="about" class="about-section">
-  <div class="container">
-
-    <!-- Section Title -->
-    <h2 class="section-title">About Me</h2>
-
-    <!-- Mission/Motto -->
-    <p class="mission">
-      Bridging healthcare needs with reliable pharmaceutical solutions.
-    </p>
-
-    <!-- Main About Paragraph -->
-    <p class="about-paragraph">
-      I am a dedicated medical sales representative with a passion for advancing healthcare access through innovative pharmaceutical solutions. With extensive experience in promoting evidence-based therapies, I specialize in connecting doctors and pharmacies with trusted medications that improve patient outcomes. My role goes beyond sales—I work closely with healthcare professionals to understand clinical challenges and provide tailored support that aligns with treatment goals. Operating primarily in Nairobi, I bridge the gap between pharmaceutical manufacturers and the frontline of care, ensuring that every prescription is backed by quality, safety, and timely delivery. Whether it's launching a new therapy or reinforcing an established brand, I bring strategic insight, product knowledge, and a commitment to excellence in every interaction.
-    </p>
-
-    <!-- Download CV -->
-    <a href="./cv/ezekiel-cv.pdf" class="btn-download" download>Download CV</a>
-
-    <!-- Contact CTA -->
-    <p class="contact-cta">
-      Have a product or healthcare solution you'd like to promote?
-      <a href="#contact">Let’s connect.</a>
-    </p>
-
-  </div>
-</section>
-<!-- Services Section -->
-<section id="services" class="services-section">
-  <div class="container">
-    <h2 class="section-title">What I Offer</h2>
-    
-    <div class="services-grid">
-      <!-- Service 1 -->
-      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-        <i class="bi bi-capsule service-icon" title="Sampling, promotions & advocacy"></i>
-        <h3>Product Representation</h3>
-        <p>
-          Promoting pharmaceutical products with accuracy and integrity to healthcare providers across Nairobi.
-        </p>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-        <i class="bi bi-person-bounding-box service-icon" title="Relationship-building with clinics & pharmacies"></i>
-        <h3>Doctor & Pharmacy Engagement</h3>
-        <p>
-          Building lasting relationships with medical professionals to support treatment decisions and trust in drug efficacy.
-        </p>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-        <i class="bi bi-bar-chart service-icon" title="Field reporting & competitor feedback"></i>
-        <h3>Market Insights</h3>
-        <p>
-          Providing pharmaceutical companies with real-time field insights, prescribing trends, and competitor activity.
-        </p>
-      </div>
-
-      <!-- Service 4 -->
-      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-        <i class="bi bi-people service-icon" title="Presence at conferences and launches"></i>
-        <h3>Medical Event Support</h3>
-        <p>
-          Representing brands during CME events, product launches, and conferences to ensure impactful medical presence.
-        </p>
-      </div>
-    </div>
-
-    <!-- Stats Row -->
-    <div class="stats-row">
-      <div class="stat-item">
-        <h3>250+</h3>
-        <p>Doctors Reached</p>
-      </div>
-      <div class="stat-item">
-        <h3>3,000+</h3>
-        <p>Pharmacy Consultations</p>
-      </div>
-      <div class="stat-item">
-        <h3>15+</h3>
-        <p>Products Promoted</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="main.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-</body>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
-
