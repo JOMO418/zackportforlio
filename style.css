@@ -1627,3 +1627,14 @@ img {
   color: #0d6efd;
   transform: scale(1.1);
 }
+.modal {
+  z-index: 1050;
+}
+
+.modal-backdrop {
+  z-index: 1040;
+}
+
+body.modal-open {
+  overflow: hidden;
+}

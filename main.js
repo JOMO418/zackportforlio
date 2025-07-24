@@ -136,3 +136,13 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
+document.querySelectorAll('[data-bs-toggle="modal"]').forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const targetId = btn.getAttribute("data-bs-target").replace("#", "");
+    const modalEl = document.getElementById(targetId);
+    if (modalEl) {
+      const modal = new bootstrap.Modal(modalEl);
+      modal.show();
+    }
+  });
+});
