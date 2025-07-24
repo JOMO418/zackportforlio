@@ -113,11 +113,42 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-// === (Optional) Dark Mode Toggle Support ===
-// Uncomment this if you want a dark mode toggle
-/*
-const toggleBtn = document.getElementById('theme-toggle');
-toggleBtn?.addEventListener('click', () => {
-  document.documentElement.toggleAttribute('data-theme', 'dark');
+document.addEventListener("DOMContentLoaded", function () {
+  // Back to top
+  
+// ===== Clock Function =====
+function updateClock() {
+  const now = new Date();
+  const options = {
+    timeZone: 'Africa/Nairobi',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  };
+  const time = now.toLocaleTimeString('en-KE', options);
+  document.getElementById("clock").textContent = time;
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTop = document.getElementById("backToTop");
+
+  // Show/hide button on scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  // Scroll to top smoothly
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 });
-*/
+
