@@ -39,13 +39,16 @@ body {
 }
 
 /* ===== Header Styles ===== */
+/* General Navbar Styles */
+/* ===== HEADER STYLING ===== */
 .header {
   background: linear-gradient(90deg, #e0f7f9, #a6e3e9);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 5%;
-  position: fixed;
+  padding: 10px 5%;
+  height: auto;
+  position: static;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -114,43 +117,75 @@ body {
 }
 
 
-/* ===== Navbar ===== */
-/* ===== Navbar ===== */
-.navbar {
+.nav-links {
   display: flex;
-  gap: 24px;
   align-items: center;
+  gap: 1.2rem;
 }
 
-/* Nav Links */
-.navbar .nav-link {
-  font-size: 17px;
-  font-weight: 500;
+.nav-links a {
   text-decoration: none;
-  color: #333;
-  transition: all 0.3s ease;
-  padding: 8px 10px;
-  white-space: nowrap;
+  color: #003838;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
 }
 
-.navbar .nav-link:hover {
-  color: #0077cc;
+.nav-links a:hover {
+  color: #383191;
+  text-shadow: 0 0 5px rgba(0, 100, 100, 0.3);
+}
+/* Hamburger icon (hidden by default) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #004444;
+  cursor: pointer;
 }
 
-/* CTA Button */
-.navbar .nav-link.cta {
-  border: 2px solid #0077cc;
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: rgba(127, 255, 212, 0.95);
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hire-btn {
+    margin-top: 0.5rem;
+  }
+}
+
+
+/* Hire Me Button */
+.hire-btn {
   padding: 8px 16px;
-  border-radius: 6px;
-  color: #0077cc;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #00c9a7, #00796b);
+  color: white !important;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 200, 180, 0.3);
+  transition: 0.3s ease;
 }
 
-.navbar .nav-link.cta:hover {
-  background: #0077cc;
-  color: #fff;
+.hire-btn:hover {
+  background: linear-gradient(135deg, #009688, #004d40);
+  box-shadow: 0 0 15px rgba(0, 255, 225, 0.5);
 }
+
 
 /* ===== Social Icons ===== */
 .header-social {
@@ -183,129 +218,6 @@ body {
   opacity: 0.9;
 }
 
-/* ===== Hamburger ===== */
-.hamburger {
-  display: none;
-  font-size: 26px;
-  color: #0077cc;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  z-index: 1001;
-}
-
-/* Rotate when active */
-.hamburger.active {
-  transform: rotate(90deg);
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 1024px) {
-  .navbar {
-    gap: 20px;
-  }
-
-  .navbar .nav-link {
-    font-size: 16px;
-  }
-
-  .logo {
-    font-size: 22px;
-  }
-
-  .header-social a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: #f0f8ff;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 220px;
-    padding: 20px;
-    box-shadow: -4px 8px 12px rgba(0, 0, 0, 0.08);
-    display: none; /* Hidden by default on mobile */
-  }
-
-  .navbar.active {
-    display: flex; /* Shown when toggled */
-  }
-
-  .navbar .nav-link {
-    width: 100%;
-    padding: 12px 0;
-    font-size: 16px;
-  }
-
-  .hamburger {
-    display: block; /* Show hamburger on mobile */
-  }
-
-  .header-social {
-    display: none; /* Hide social icons on mobile */
-  }
-}
-
-@media (max-width: 480px) {
-  .header {
-    padding: 16px 5%;
-  }
-
-  .logo {
-    font-size: 20px;
-  }
-
-  .hamburger {
-    font-size: 24px;
-  }
-
-  .navbar {
-    width: 100%;
-    padding: 16px;
-  }
-}
-/* Responsive Navbar */
-@media (max-width: 768px) {
-  .navbar {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px; /* adjust based on your header */
-    left: 0;
-    width: 100%;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-  }
-
-  .navbar.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1000;
-  }
-}
-
-@media (min-width: 769px) {
-  .hamburger {
-    display: none;
-  }
-
-  .navbar {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-  }
-}
 
 
 /* ========== HERO / HOME SECTION ========== */
@@ -1299,5 +1211,143 @@ body {
 
   .contact-socials a {
     margin-bottom: 10px;
+  }
+}
+/* === General Layout Fixes for Small Screens === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 5%;
+}
+
+/* === General Layout Fixes for Small Screens === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 5%;
+}
+
+/* === Logo + Tagline Adjustments === */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.logo-text strong {
+  font-size: 1.2rem;
+}
+
+.tagline {
+  font-size: 0.85rem;
+}
+
+/* === Navbar Responsiveness === */
+.navbar {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar.active {
+  display: flex;
+}
+
+.navbar .nav-link {
+  padding: 12px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* === Hamburger Visibility === */
+.hamburger {
+  display: block;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* === Social Icons === */
+.header-social {
+  display: none; /* hide on mobile */
+}
+
+/* === Images Responsive === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Media Queries for Tablets and Larger Devices === */
+@media (min-width: 768px) {
+  .navbar {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    background: transparent;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .navbar .nav-link {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .header-social {
+    display: flex;
+    gap: 15px;
+  }
+
+  .logo-text strong {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+}
+
+/* === Media Query for Large Screens (Desktops) === */
+@media (min-width: 1024px) {
+  section {
+    padding: 80px 10%;
+  }
+
+  .navbar .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .header-social {
+    gap: 20px;
   }
 }

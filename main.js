@@ -2,16 +2,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.getElementById("hamburger");
   const navbar = document.getElementById("navbar");
 
+  // Toggle nav menu on hamburger click
   hamburger.addEventListener("click", () => {
     navbar.classList.toggle("active");
   });
-});
-// Close navbar when a nav-link is clicked (mobile)
-document.querySelectorAll('.nav-link').forEach(link => {
-link.addEventListener('click', () => {
-  document.querySelector('.navbar').classList.remove('active');
-  document.querySelector('.hamburger').classList.remove('active');
-});
+
+  // Close nav when any link is clicked (mobile)
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navbar.classList.remove("active");
+    });
+  });
 });
 
   document.addEventListener("DOMContentLoaded", function () {
